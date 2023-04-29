@@ -2,11 +2,11 @@ FROM node:18
 
 WORKDIR /usr/app
 
-COPY package*.json ./
+COPY package*.json /usr/app
 
 RUN npm install
 
-COPY . .
+COPY . /usr/app
 
 EXPOSE 3000
 
